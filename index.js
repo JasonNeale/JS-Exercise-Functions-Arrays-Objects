@@ -51,11 +51,8 @@ function sortCarInventory( inventory ) {
         let start = a.car_model;
         let end = b.car_model;
 
-        if( start < end ) {
-            return -1;
-        } else if( start > end ) {
-            return 1;
-        }
+        if ( start < end ) { return -1 }
+        if ( start > end ) { return 1 }
         
         return 0;
     });
