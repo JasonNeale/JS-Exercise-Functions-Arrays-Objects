@@ -89,10 +89,12 @@ function getGermanCars(inventory) {
     let makeArr = [];
 
     for (let i = 0; i < inventory.length; i++) {
-        if (inventory[i].car_make === 'Audi') { makeArr.push(inventory[i]) }
-        if (inventory[i].car_make === 'Mercedes-Benz') { makeArr.push(inventory[i]) }
-        if (inventory[i].car_make === 'Volkswagen') { makeArr.push(inventory[i]) }  
-        if (inventory[i].car_make === 'BMW') { makeArr.push(inventory[i]) }
+        if (inventory[i].car_make === 'Audi' ||
+            inventory[i].car_make === 'Mercedes-Benz' ||
+            inventory[i].car_make === 'Volkswagen' ||
+            inventory[i].car_make === 'BMW') {
+            makeArr.push(inventory[i])
+        }
     }
 
     return makeArr;
